@@ -25,23 +25,30 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  width: 100%;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.4;
-  background-color: #fff;
+
+.comming-soon {
+  background-color: #A331DC;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }
 
-.flexitem ul li a {
-  text-decoration: none;
-  color: #fff;
+.smallnav .categ {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.smallnav img {
+  width: 20px;
+  height: 20px;
 }
 
 ul {
   list-style: none;
 }
-.currency{
+
+.currency {
   width: 90%;
   margin: auto;
   margin-top: 2%;
@@ -52,7 +59,7 @@ ul {
 .container {
   display: flex;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   justify-content: space-around;
 }
 
@@ -128,21 +135,12 @@ ul {
   gap: 1em;
 }
 
-.flexcol {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
 .second-links {
   color: black;
   font-size: 15px;
 }
 
-.main-links a:hover {
-  color: #D544B9;
-  text-decoration: none;
-}
+
 
 .side-navbar {
   width: 250px;
@@ -175,11 +173,6 @@ ul {
   text-align: center;
 }
 
-.nav-items ul li a {
-  text-decoration: none;
-  color: #000;
-}
-
 .nav-link {
   color: #929292;
 }
@@ -187,16 +180,6 @@ ul {
 .nav-link img {
   width: 20px;
   height: 20px;
-}
-
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
-  background-color: #ffffff26;
-}
-
-.my-container {
-  transition: 0.4s;
 }
 
 .active-nav {
@@ -303,4 +286,3 @@ ul {
   border-radius: 2rem;
   padding: 2px 20px;
 }
-
