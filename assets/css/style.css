@@ -26,7 +26,9 @@
 }
 
 .btn:focus,
-input:focus, input:hover, .form-control:focus {
+input:focus,
+input:hover,
+.form-control:focus {
   box-shadow: 0px 0px 0px transparent;
   outline: none;
 }
@@ -138,7 +140,7 @@ ul {
 
 .bottom-nav {
   width: 100%;
-  background-color: #ddd;
+  background-color: #F7F7F7;
 }
 
 .bottom-nav .content {
@@ -164,7 +166,7 @@ ul {
 }
 
 .bottom-nav .content .navbar-nav .nav-items.categories .nav-link {
-  width: 248px;
+  width: 211px;
   padding: 20px 0px;
   background-color: #3577F0;
   display: flex;
@@ -188,8 +190,8 @@ ul {
 }
 
 .bottom-nav .content .navbar-nav .nav-item .nav-link {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 700;
   color: #000 !important;
 }
 
@@ -249,7 +251,7 @@ header {
 
 header .side-navbar {
   width: 100%;
-  height: 100%;
+  height: 105%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
   background-color: #fff;
   color: #100901;
@@ -278,7 +280,7 @@ header .side-navbar .active-nav {
 
 header .watch {
   width: 100%;
-  height: 100%;
+  height: 94%;
   display: flex;
   background-size: cover;
   background: #F7F7F7;
@@ -298,10 +300,12 @@ header .watch {
 }
 
 .watch-text {
-  width: 300px;
+  width: 390px;
+  padding: 10px;
 }
 
 .watch-text h1 {
+  font-size: 35px;
   font-weight: 600;
 }
 
@@ -315,25 +319,49 @@ header .watch {
 }
 
 .watch-btn {
-  width: 140px;
+  width: 150px;
   border: 0;
-  padding: 12px 10px;
+  padding: 15px 10px;
   outline: none;
   color: #292930;
+  justify-content: space-between;
   border-radius: 9px;
   cursor: pointer;
   transition: width 0.5s;
 }
 
-.watch-btn:hover img {
-  display: block;
+.watch-btn i {
+  margin-inline-start: 5px;
 }
 
 .watch-btn:hover {
-  width: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
 }
 
 .leather {
@@ -373,3 +401,107 @@ header .watch {
   border-radius: 2rem;
   padding: 2px 20px;
 }
+.advantages .content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.advantages .advantages-col{
+  width: 18%;
+  padding: 18px 24px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #F1F1F1;
+  line-height: 6;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.advantages .advantages-col img{
+  width: 45px;
+  height: 45px;
+}
+.advantages .advantages-col h2 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  color: #292930;
+}
+.arrivals {
+  margin-top: 7%;
+}
+.arrivals .row .mb-3 p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8C71DB;
+ }
+ .arrivals .row .mb-3{
+   font-weight: 700;
+   color: #292930;
+ }
+ .arrivals .row .col-6 .btn{
+   background-color: #F6F7FB;
+ }
+ .arrivals .row .col-6 img{
+   width: 15px;
+   height: 15px;
+ }
+ .arrivals .row .col-6 .btn:focus{
+   border: 0px 0px 0px transparent;
+   box-shadow: none;
+ }
+ .arrivals .row .col-md-3 .card{
+   border: 0px;
+ }
+ .arrivals .row .col-md-3 .card .sale-logo{
+   background-color: #3577F0;
+   color: #ffffff;
+   height: 20px;
+   width: 60px;
+   font-size: 12px;
+   line-height: 20px;
+   font-weight: 600;
+   position: absolute;
+   top: 20px;
+   border-radius: 2px;
+   right: -12px;
+   text-align: center;
+ }
+ .arrivals .row .col-md-3 .card img{
+   border-radius: 5px;
+   transition: all 0.3s linear;
+ }
+ .arrivals .row .col-md-3 .card img:hover{
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+ }
+ .arrivals .row .col-md-3 .card .card-text{
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   padding: 15px 0px;
+ }
+ .carousel-inner{
+   overflow: visible;
+ }
+ .arrivals .row .col-md-3 .card .card-text h4{
+   color: #969696;
+   font-size: 16px;
+   font-weight: 600;
+ }
+ .arrivals .row .col-md-3 .card .card-text .prices{
+   display: flex;
+   justify-content: center;
+ }
+ .arrivals .row .col-md-3 .card .card-text .prices .old-price{
+   font-size: 18px;
+   color: #929292;
+   text-decoration: line-through;
+   font-weight: 600;
+ }
+ .arrivals .row .col-md-3 .card .card-text .prices .new-price{
+   font-size: 18px;
+   color: #292930;
+   font-weight: 600;
+ }
