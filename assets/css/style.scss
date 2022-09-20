@@ -447,6 +447,7 @@ header {
       .col-12 {
 
         .card {
+          border: 0px;
           .sale-logo {
             background-color: #3577F0;
             color: #ffffff;
@@ -498,7 +499,6 @@ header {
         .carousel-inner {
           overflow: hidden;
         }
-        margin-right: 20px;
       }
     }
   }
