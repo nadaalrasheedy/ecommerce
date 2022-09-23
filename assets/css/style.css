@@ -677,6 +677,44 @@ header .watch img {
   padding-top: 30px;
 }
 
+.best-sellers .container .content .owl-carousel .owl-nav .owl-prev {
+  background: #F6F7FB;
+  color: #777777;
+  border: none;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 25px;
+  top: -20%;
+  padding: 10px 20px !important;
+}
+
+.best-sellers .container .content .owl-carousel .owl-nav .owl-next {
+  background: #F6F7FB;
+  color: #777777;
+  border: none;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -25px;
+  top: -20%;
+  padding: 10px 20px !important;
+}
+
 .best-sellers .container .content .owl-carousel .card {
   width: 100%;
   border: 0;
