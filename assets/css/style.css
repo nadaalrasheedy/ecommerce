@@ -696,26 +696,30 @@ header .watch img {
 }
 
 .best-sellers .container .content .owl-carousel .card .card-text .prices {
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .best-sellers .container .content .owl-carousel .card .card-text .prices .old-price {
-  font-size: 16px;
+  font-size: 15px;
   color: #929292;
   text-decoration: line-through;
   font-weight: 600;
 }
 
 .best-sellers .container .content .owl-carousel .card .card-text .prices .new-price {
-  font-size: 16px;
+  font-size: 15px;
   color: #292930;
   font-weight: 600;
 }
 
 .best-sellers .container .content .owl-carousel .card .card-text .stars {
-  width: 56%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,8 +730,8 @@ header .watch img {
 }
 
 .best-sellers .container .content .owl-carousel .card .card-text .stars img {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
 }
 
 .best-sellers .container .content .owl-carousel .card .card-text .sale-logo {
@@ -776,6 +780,122 @@ header .watch img {
           box-shadow: 0 0.5em 0.5em -0.4em #fff;
   -webkit-transform: translateY(-0.25em);
           transform: translateY(-0.25em);
+}
+
+.explore .container .content {
+  padding: 40px 0px;
+}
+
+.explore .container .content .col-6 p {
+  color: #8C71DB;
+  font-weight: 600;
+}
+
+.explore .container .content .col-6 p img {
+  width: 20px;
+  height: 20px;
+}
+
+.explore .container .content .card {
+  margin-top: 30px;
+  border: 0;
+}
+
+.explore .container .content .card img {
+  border-radius: 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.explore .container .content .card img:hover {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.explore .container .content .card .card-text h3 {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #7F7F7F;
+}
+
+.explore .container .content .card .card-text .prices {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.explore .container .content .card .card-text .prices .new-price {
+  font-size: 15px;
+  color: #292930;
+  font-weight: 700;
+}
+
+.explore .container .content .card .card-text .prices .old-price {
+  font-size: 15px;
+  color: #D6D6D6;
+  text-decoration: line-through;
+}
+
+.explore .container .content .card .sale-logo {
+  background-color: #3577F0;
+  color: #ffffff;
+  height: 20px;
+  width: 60px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 35px;
+  border-radius: 2px;
+  right: -12px;
+  text-align: center;
+}
+
+.explore .container .content .card .dots {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.explore .container .content .card .dots img {
+  width: 14px;
+  height: 14px;
+}
+
+.explore .container .content .button {
+  padding: 60px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.explore .container .content .button .btn {
+  padding: 15px 35px;
+  background-color: #F6F7FB;
+  color: #777777;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.explore .container .content .button .btn:hover, .explore .container .content .button .btn:focus {
+  -webkit-box-shadow: inset 0 -3.5em 0 0 #8D6ABE;
+          box-shadow: inset 0 -3.5em 0 0 #8D6ABE;
+  color: #fff;
 }
 
 .shopping .container .content {
