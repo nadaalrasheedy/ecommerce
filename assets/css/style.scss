@@ -545,8 +545,12 @@ header {
         }
 
         .owl-nav {
-          .owl-prev {
+          .owl-prev, .owl-next {
+            width: 50px;
+            height: 50px;
             background: #F6F7FB;
+            top: -20%;
+            padding: 0px !important;
             color: #777777;
             border: none;
             text-align: center;
@@ -554,22 +558,30 @@ header {
             align-content: center;
             justify-content: center;
             position: absolute;
-            right: 25px;
-            top: -20%;
-            padding: 10px 20px !important;
+            
+            span {
+              color: transparent !important;
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              background: url('../images/right-arrow (1).png') center / contain no-repeat;
+              top: calc(50% - 10px);
+              right: calc(50% - 10px);
+            }
+          }
+          .owl-prev {
+            right: 60px;
+
+            &::after {
+              transform: scaleX(-1);
+            }
           }
           .owl-next {
-            background: #F6F7FB;
-            color: #777777;
-            border: none;
-            text-align: center;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            position: absolute;
-            right:-25px;
-            top: -20%;
-            padding: 10px 20px !important;
+            right: 0px;
           }
         }
 
