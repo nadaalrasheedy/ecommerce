@@ -848,12 +848,26 @@ header .watch img {
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
+  position: relative;
+  z-index: 9;
 }
 .feedback .content .owl-carousel .card .card-text p {
   color: #878787;
   font-size: 13px;
   font-weight: 600;
   line-height: 2;
+}
+.feedback .content .owl-carousel .card .card-text::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  bottom: -25px;
+  left: 70px;
+  z-index: -1;
+  -webkit-clip-path: polygon(27% 0, 100% 0%, 100% 0, 29% 100%);
+          clip-path: polygon(27% 0, 100% 0%, 100% 0, 29% 100%);
 }
 .feedback .content .owl-carousel .card ul {
   padding-top: 20px;
